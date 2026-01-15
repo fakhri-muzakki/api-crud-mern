@@ -100,7 +100,7 @@ curl http://localhost:3000/api/users
 
 ### Base URL
 ```
-Production: https://api-book-store.vercel.app
+Production: https://api-mern-crud-eight.vercel.app/
 Local:      http://localhost:3000
 ```
 
@@ -110,7 +110,6 @@ Local:      http://localhost:3000
 |--------|----------|-------------|
 | `GET` | `/health` | Health check |
 | `GET` | `/api/users` | Get all users (with pagination) |
-| `GET` | `/api/users/:id` | Get user by ID |
 | `POST` | `/api/users` | Create new user |
 | `PUT` | `/api/users/:id` | Update user |
 | `DELETE` | `/api/users/:id` | Delete user |
@@ -182,7 +181,7 @@ GET /api/users?page=1&limit=5
 
 #### cURL Example
 ```bash
-curl -X GET "https://api-book-store.vercel.app/api/users?page=1&limit=5"
+curl -X GET "https://api-mern-crud-eight.vercel.app/api/users?page=1&limit=5"
 ```
 
 ---
@@ -221,7 +220,7 @@ Content-Type: application/json
   "message": "User created successfully",
   "data": {
     "id": "cmkey687n0000wb6wb6h5y1i2",
-    "email": "yantao@gmail.com",
+    "email": "yanto@gmail.com",
     "name": "yanto",
     "gender": "MALE",
     "createdAt": "2026-01-15T04:26:20.819Z",
@@ -232,11 +231,11 @@ Content-Type: application/json
 
 #### cURL Example
 ```bash
-curl -X POST "https://api-book-store.vercel.app/api/users" \
+curl -X POST "https://api-mern-crud-eight.vercel.app/api/users" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "yanto",
-    "email": "yantao@gmail.com",
+    "email": "yanto@gmail.com",
     "gender": "MALE"
   }'
 ```
@@ -296,7 +295,7 @@ Content-Type: application/json
 
 #### cURL Example
 ```bash
-curl -X PUT "https://api-book-store.vercel.app/api/users/cmkex27ak0000wbvondfassx7" \
+curl -X PUT "https://api-mern-crud-eight.vercel.app/api/users/cmkex27ak0000wbvondfassx7" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "ocam cs",
@@ -331,7 +330,7 @@ DELETE /api/users/:id
 
 #### cURL Example
 ```bash
-curl -X DELETE "https://api-book-store.vercel.app/api/users/cmkex27ak0000wbvondfassx7"
+curl -X DELETE "https://api-mern-crud-eight.vercel.app/api/users/cmkex27ak0000wbvondfassx7"
 ```
 
 ---
@@ -570,7 +569,7 @@ enum Gender {
 
 ## 👤 Author
 
-**Your Name**
+**Fakhri Muzakki**
 - GitHub: [@fakhri-muzakki](https://github.com/fakhri-muzakki/)
 - LinkedIn: [Fakhri Muzakki](https://www.linkedin.com/in/fakhrimuzakki/)
 - Email: fakhrimuzakki119@gmail.com
