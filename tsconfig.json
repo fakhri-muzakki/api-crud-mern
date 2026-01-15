@@ -19,9 +19,6 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
   },
 
   "include": ["src/**/*", "api/**/*"],

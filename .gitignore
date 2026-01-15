@@ -27,3 +27,4 @@ logs/
 bun.lock
 catatan.txt
 /src/generated/prisma
+/generated/prisma
