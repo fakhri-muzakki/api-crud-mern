@@ -18,6 +18,20 @@ app.use(cors());
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
+// ✅ Root endpoint - API info
+app.get('/', (req, res) => {
+  res.status(200).json({
+    status: 'success',
+    message: 'Book Store API',
+    version: '1.0.0',
+    documentation: 'https://github.com/fakhri-muzakki/api-crud-mern',
+    endpoints: {
+      health: '/health',
+      users: '/api/users',
+    },
+  });
+});
+
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.status(200).json({
