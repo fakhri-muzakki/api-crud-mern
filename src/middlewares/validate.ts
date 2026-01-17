@@ -6,8 +6,6 @@ type DataType = 'body' | 'query' | 'params';
 export const validate =
   (schema: ObjectSchema, dataType: DataType) =>
   (req: Request, res: Response, next: NextFunction) => {
-    console.log(req.body);
-
     const { error, value } = schema.validate(req[dataType], {
       abortEarly: false, // tampilkan semua error
       stripUnknown: true, // buang field liar (anti injection)
